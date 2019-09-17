@@ -1,0 +1,23 @@
+[{
+    "id": 1,
+    "type": "ftg",
+    "question": "This is the fastest train ___ the world.",
+    "correctAnswer": "in"
+}, {
+    "id": 2,
+    "type": "mc",
+    "question": "He accused me ___ lying.",
+    "choices": ["for", "of", "at"],
+    "correctAnswer": "of"
+}, {
+    "id": 3,
+    "type": "ftg",
+    "question": "Japan often suffers ___ typhoons.",
+    "correctAnswer": "from"
+}, {
+    "id": 4,
+    "type": "mc",
+    "question": "At the moment, I don't have ___ to do at work.",
+    "choices": ["something", "anything", "nothing"],
+    "correctAnswer": "anything"
+}]
