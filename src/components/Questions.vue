@@ -1,5 +1,9 @@
 <template>
   <div>
+    <div class="counter">
+      Correct: {{correctAnswers}} / {{questions.length}}
+    </div>
+
     <div v-if="currentQuestion !== null" class="question">
       <FillTheGap v-if="currentQuestion.type === 'ftg'" :question="currentQuestion" ref="currentQuestionElement" />
       <MultipleChoice v-else-if="currentQuestion.type === 'mc'" :question="currentQuestion" ref="currentQuestionElement" />
@@ -30,7 +34,8 @@
     data () {
       return {
         questions: questionsJson,
-        currentQuestionId: 0
+        currentQuestionId: 0,
+        correctAnswers: 0
       }
     }, 
     computed: {
@@ -40,10 +45,12 @@
     },
     methods: {    
       checkAnswer() {
-        if (this.$refs.currentQuestionElement.checkAnswer() === true)
+        if (this.$refs.currentQuestionElement.checkAnswer() === true) {
           alert('Correct!');
-        else
+          this.correctAnswers++;
+        } else {
           alert('Incorrect :(');
+        }
 
         this.currentQuestionId++;
       }
@@ -52,8 +59,14 @@
 </script>
 
 <style scoped>
+  .counter {
+    text-align: right;
+    padding: 20px;
+    font-size: 16px;
+  }
+
   .question {
-    margin-top: 20%;
+    margin-top: 10%;
   }
 
   .check-bar {
