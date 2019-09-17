@@ -1,23 +1,23 @@
 [{
     "id": 1,
     "type": "ftg",
-    "question": "This is the fastest train ___ the world.",
+    "text": "This is the fastest train _ the world.",
     "correctAnswer": "in"
 }, {
     "id": 2,
     "type": "mc",
-    "question": "He accused me ___ lying.",
+    "text": "He accused me _ lying.",
     "choices": ["for", "of", "at"],
     "correctAnswer": "of"
 }, {
     "id": 3,
     "type": "ftg",
-    "question": "Japan often suffers ___ typhoons.",
+    "text": "Japan often suffers _ typhoons.",
     "correctAnswer": "from"
 }, {
     "id": 4,
     "type": "mc",
-    "question": "At the moment, I don't have ___ to do at work.",
+    "text": "At the moment, I don't have _ to do at work.",
     "choices": ["something", "anything", "nothing"],
     "correctAnswer": "anything"
 }]
