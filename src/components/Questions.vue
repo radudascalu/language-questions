@@ -66,7 +66,7 @@
   }
 
   .question {
-    margin-top: 10%;
+    margin-top: 15%;
   }
 
   .check-bar {
