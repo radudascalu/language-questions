@@ -25,4 +25,10 @@
 </script>
 
 <style scoped>
+    input {
+        text-align: center;
+        font-family: Courier;
+        font-size: 20px;
+        width: 100px;
+    }
 </style>

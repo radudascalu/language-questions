@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="currentQuestion !== null">
+    <div v-if="currentQuestion !== null" class="question">
       <FillTheGap v-if="currentQuestion.type === 'ftg'" :question="currentQuestion" ref="currentQuestionElement" />
       <MultipleChoice v-else-if="currentQuestion.type === 'mc'" :question="currentQuestion" ref="currentQuestionElement" />
     </div>
@@ -52,15 +52,29 @@
 </script>
 
 <style scoped>
+  .question {
+    margin-top: 20%;
+  }
+
   .check-bar {
     position: fixed;
     bottom: 0px;
     padding: 20px;
-    border-top: 1px solid lightgray;
+    background: white;
     width: 100%;
   }
   
   .check-button {
     padding: 5px 10px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color: #c9dbd0;
+    box-shadow: none;
+    font-size: 20px;
+    font-family: Courier;
+  }
+  
+  .check-button:focus {
+    outline: none;
   }
 </style>
